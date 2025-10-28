@@ -4,12 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         //инициализация фильтров
-        Filter<Integer> intFilter = new Filter<Integer>() {
-            @Override
-            public Integer apply(Integer o) {
-                return (int) Math.pow(o, 2);
-            }
-        };
+        Filter<Integer> intFilter = o -> (int) Math.pow(o, 2);
 
         Integer[] numbers = {1, 2, 3, 4, 5};
 
